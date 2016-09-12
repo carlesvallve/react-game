@@ -1,93 +1,195 @@
-
-
-
 ul, li {
-    list-style: none;
-    -webkit-box-sizing: initial;
-    -moz-box-sizing: initial;
-    box-sizing: initial;
+  list-style: none;
+  -webkit-box-sizing: initial;
+  -moz-box-sizing: initial;
+  box-sizing: initial;
 }
 html, body, ol, ul, li, h1, p {
-    padding: 0;
-    margin: 0;
-    border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 *, input, textarea, button, select, a {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 * {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 ul, menu {
-    display: block;
-    list-style-type: disc;
-    -webkit-margin-before: 1em;
-    -webkit-margin-after: 1em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    -webkit-padding-start: 40px;
+  display: block;
+  list-style-type: disc;
+  -webkit-margin-before: 1em;
+  -webkit-margin-after: 1em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 40px;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-    font-weight: 400;
+  font-size: 100%;
+  font-weight: 400;
 }
 blockquote, body, dd, div, dl, dt, fieldset, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 *, a, button, input, select, textarea {
-    -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
 }
 
 h2 {
-    display: block;
-    font-size: 1.5em;
-    -webkit-margin-before: 0.83em;
-    -webkit-margin-after: 0.83em;
-    -webkit-margin-start: 0px;
-    -webkit-margin-end: 0px;
-    font-weight: bold;
+  display: block;
+  font-size: 1.5em;
+  -webkit-margin-before: 0.83em;
+  -webkit-margin-after: 0.83em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  font-weight: bold;
 }
 h3 {
-    font-size: 28px;
-    font-weight: 300;
-    font-style: normal;
-    line-height: 1.1em;
-    margin-bottom: 30px;
+  font-size: 28px;
+  font-weight: 300;
+  font-style: normal;
+  line-height: 1.1em;
+  margin-bottom: 30px;
 }
 
 img {
-    vertical-align: middle;
-    border-style: none;
+  vertical-align: middle;
+  border-style: none;
 }
 
 a:hover, a:visited, a:link, a:active {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    text-decoration: none;
-    border: none;
-    outline: none;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+// @font-face {
+//   font-family: 'glamourgirl';
+//   src: url('../assets/fonts/glamourgirl.ttf');
+// }
+
+
+@font-face {
+  font-family: 'beyond-wonderland';
+  src: url('../assets/fonts/beyond-wonderland.ttf');
+}
+
+@font-face {
+  font-family: 'dodge';
+  src: url('../assets/fonts/dodge.ttf');
+}
+
+@font-face {
+  font-family: 'glamourgirl';
+  src: url('../assets/fonts/glamourgirl.ttf');
+}
+
+@font-face {
+  font-family: 'littlelord';
+  src: url('../assets/fonts/littlelord.ttf');
+}
+
+@font-face {
+  font-family: 'newyork';
+  src: url('../assets/fonts/newyork.ttf');
+}
+
+@font-face {
+  font-family: 'precious';
+  src: url('../assets/fonts/precious.ttf');
+}
+
+@font-face {
+  font-family: 'radar';
+  src: url('../assets/fonts/radar.ttf');
+}
+
+@font-face {
+  font-family: 'requiem';
+  src: url('../assets/fonts/requiem.ttf');
+}
+
+@font-face {
+  font-family: 'ringbearer';
+  src: url('../assets/fonts/ringbearer.ttf');
+}
+
+@font-face {
+  font-family: 'saucer';
+  src: url('../assets/fonts/saucer.ttf');
+}
+
+@font-face {
+  font-family: 'underworld';
+  src: url('../assets/fonts/underworld.ttf');
+}
+
+@font-face {
+  font-family: 'alba';
+  src: url('../assets/fonts/alba/alba.ttf');
+}
+
+@font-face {
+  font-family: 'alba-bold';
+  src: url('../assets/fonts/alba/albam.ttf');
+}
+
+@font-face {
+  font-family: 'alba-bevel';
+  src: url('../assets/fonts/alba/albas.ttf');
 }
 
 .app {
-    font-family: 'museo-sans-rounded', sans-serif;
+  font-family: 'saucer';
+  box-shadow: 0 0 8px 1px rgba(25,25,25,.3);
+  position: absolute;
+  margin: auto;
+  top: 20px;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
 
-    //background-image: url('/assets/img/special/hot-sales/banners/bg-top-gradient-en.png');
-    //background-repeat: no-repeat;
-    //background-position: center top, center bottom 70px;
-    //background-size: contain, contain;
+  //min-width: 480px;
+  //min-height: 320px;
+}
 
-    max-width: 980px;
-    min-width: 980px;
-    margin: 0 auto;
+.header {
+  font-size: 48px;
+  line-height: 1.35;
+  text-align: center;
+  box-shadow: 0 0 8px 1px rgba(25,25,25,.3);
 
-    box-shadow: 0 0 8px 1px rgba(25,25,25,.3);
+  position: absolute;
+  margin: auto;
+  top:20px;
+  left: 20px;
+  right: 20px;
+
+  height: 60px;
+}
+
+.footer {
+  font-size: 48px;
+  line-height: 1.35;
+  text-align: center;
+  box-shadow: 0 0 8px 1px rgba(25,25,25,.3);
+
+  position: absolute;
+  margin: auto;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+
+  height: 60px;
 }

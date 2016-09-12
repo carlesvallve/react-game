@@ -7,7 +7,6 @@ import { createStore } from 'redux'
 import todoApp from './reducers'
 import App from './components/App'
 
-
 // how to build outputs:
 // dev        -> webpack -p; sp-splitex/sp-splitex.sh;
 // production -> npm run build-production; sp-splitex/sp-splitex.sh;
