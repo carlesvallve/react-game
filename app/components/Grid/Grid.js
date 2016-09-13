@@ -5,6 +5,7 @@ import { connect } from 'react-redux'
 //import { refreshList } from '../actions'
 
 import Tile from '../Tile/Tile'
+import Player from '../Player/Player'
 
 
 const mapStateToProps = (state, ownProps) => {
@@ -34,7 +35,7 @@ class Grid extends Component {
           style={{
             width: (100 / this.props.width) + '%',
             height: (100 / this.props.height) + '%'
-          }}/>
+          }} />
       }
     }
 
@@ -47,7 +48,11 @@ class Grid extends Component {
 
     return (
       <div className='grid'>
-        {this.tiles}
+        <div className='tiles'>{this.tiles}</div>
+        <Player x={3} y={3} style={{
+          width: (100 / this.props.width) + '%',
+          height: (100 / this.props.height) + '%'
+        }} />
       </div>
     )
   }
