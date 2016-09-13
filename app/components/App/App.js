@@ -1,9 +1,10 @@
+require('./fonts.scss');
 require('./style.scss');
 
 import React from 'react'
-import { SetLanguage, SetPlatform } from '../utils/utils'
+import { SetLanguage, SetPlatform } from '../../utils/utils'
 
-import Grid from './Grid/Grid'
+import Grid from '../Grid/Grid'
 
 //import { connect } from 'react-redux'
 //import { refreshList } from '../actions'
@@ -16,9 +17,9 @@ let App = ({ dispatch }) => {
 
   return (
     <div className='app'>
-      <div className='header'>Hello World</div>
-      <Grid />
-      <div className='footer'>Bye World</div>
+      <div className='header'>Header</div>
+      <Grid width={7} height={7} />
+      <div className='footer'>Footer</div>
     </div>
   )
 }

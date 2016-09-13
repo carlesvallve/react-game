@@ -5,7 +5,9 @@ import { render } from 'react-dom'
 import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import todoApp from './reducers'
-import App from './components/App'
+import App from './components/App/App'
+
+
 
 // how to build outputs:
 // dev        -> webpack -p; sp-splitex/sp-splitex.sh;
@@ -20,6 +22,11 @@ render(
   </Provider>,
   document.getElementById('root')
 )
+
+
+
+
+//console.log('###############', window.console);
 
 // const html = renderToString(
 //   <Provider store={store}>
