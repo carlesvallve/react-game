@@ -11,10 +11,9 @@ export const closePopup = () => {
   }
 }
 
-export const refreshList = (itemCount, data) => {
+export const updateGrid = (data) => {
   return {
-    type: 'LIST_REFRESH',
-    itemCount,
+    type: 'GRID_UPDATE',
     data
   }
 }

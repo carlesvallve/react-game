@@ -1,9 +1,16 @@
+// generates a random integer between 2 values
+
+export const randomInt = (min, max) => {
+  return Math.floor(Math.random()*(max-min+1)+min);
+}
+
+
 // set language from html tag and load content file
 
 export const SetLanguage = () => {
   window.lang = document.getElementsByTagName('html')[0].getAttribute('lang') || 'en';
   window.content = require("json!../assets/json/content.json");
-  console.log('>>> lang: ' + window.lang);
+  console.log('   - lang: ' + window.lang);
 }
 
 
@@ -28,7 +35,7 @@ export const SetPlatform = () => {
   }
 
   window.platform = detectPlatform();
-  console.log('>>> platform: ' + window.platform);
+  console.log('   - platform: ' + window.platform);
 }
 
 

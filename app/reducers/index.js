@@ -1,11 +1,11 @@
 import { combineReducers } from 'redux'
-import gridlist from './gridlist'
+import grid from './grid'
 import popup from './popup'
 
 
-const todoApp = combineReducers({
-  gridlist,
+const reducers = combineReducers({
+  grid,
   popup,
 })
 
-export default todoApp
+export default reducers

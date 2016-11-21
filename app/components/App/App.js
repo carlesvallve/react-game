@@ -6,24 +6,23 @@ import { SetLanguage, SetPlatform } from '../../utils/utils'
 
 import Grid from '../Grid/Grid'
 
-//import { connect } from 'react-redux'
+import { connect } from 'react-redux'
 //import { refreshList } from '../actions'
 
 
 let App = ({ dispatch }) => {
 
+  console.log('Initializing App:')
   SetLanguage();
   SetPlatform();
 
   return (
     <div className='app'>
-      <div className='header'>Header</div>
+      <div className='header'>HEADER</div>
       <Grid width={7} height={7} />
-      <div className='footer'>Footer</div>
+      <div className='footer'>FOOTER</div>
     </div>
   )
 }
 
-//App = connect()(App)
-
-export default App
+export default connect()(App)

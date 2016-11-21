@@ -22,7 +22,9 @@ class Tile extends Component {
   render() {
     return (
       <div className='tile' style={this.props.style}>
-        <div className='tile-inner'>{this.props.x + ',' + this.props.y}</div>
+        <div className='tile-inner' style={{ backgroundColor: this.props.color }}>
+          <div className='tile-info'>{this.props.x + ',' + this.props.y}</div>
+        </div>
       </div>
     )
   }

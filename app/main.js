@@ -1,21 +1,37 @@
-import React from 'react'
-import { render } from 'react-dom'
-//import { renderToString, renderToStaticMarkup } from 'react-dom/server'
-
-import { Provider } from 'react-redux'
-import { createStore } from 'redux'
-import todoApp from './reducers'
-import App from './components/App/App'
-
-
-
 // how to build outputs:
 // dev        -> webpack -p; sp-splitex/sp-splitex.sh;
 // production -> npm run build-production; sp-splitex/sp-splitex.sh;
+//import { renderToString, renderToStaticMarkup } from 'react-dom/server'
+
+import React from 'react'
+import { render } from 'react-dom'
+
+import { Provider }                       from 'react-redux'
+import { createStore }  from 'redux'
+
+import reducers from './reducers'
+import App from './components/App/App'
 
 
-let store = createStore(todoApp) //, initialState
+// create store
+let store = createStore(reducers) //, initialState
 
+// debug store
+window.reduxDebug = true;
+
+if (window.reduxDebug === true) {
+	// override dispatch for logging: http://redux.js.org/docs/advanced/Middleware.html
+
+	let next = store.dispatch
+	store.dispatch = function dispatchAndLog(action) {
+		console.log('dispatching', action) // eslint-disable-line
+		let result = next(action)
+		console.log('next state', store.getState()) // eslint-disable-line
+		return result
+	}
+}
+
+// render application
 render(
   <Provider store={store}>
     <App />
